@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Sign Language Recognition</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../static/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../static/css/styles.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Maxim - v4.2.0
+  * Template URL: https://bootstrapmade.com/maxim-free-onepage-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex justify-content-between">
+
+      <div class="logo">
+        <h1><a href="index.html">Sign Language</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto " href="{{url_for('index')}}">Home</a></li>
+          <li><a class="nav-link scrollto" href="{{url_for('login')}}">Login</a></li>
+              <li><a class="nav-link scrollto active" href="{{url_for('main')}}">Prediction</a></li>
+              <li><a class="nav-link scrollto" href="{{url_for('real_main')}}">Real Time Prediction</a></li>
+          
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="container text-center text-md-left" data-aos="fade-up">
+      <h1>Sign Language Recognition </h1>
+     
+   
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+     
+
+    <!-- ======= Features Section ======= -->
+    
+
+    <!-- ======= Services Section ======= -->
+     
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <meta name="description" content="EMNIST-Alphabet-WebApp" />
+    <meta name="title" property="og:title" content="Alphabet-Recognition" />
+    <meta property="og:type" content="Website" />
+    <meta name="image" property="og:image" content="_">
+    <meta name="description" property="og:description" content="EMNIST-Alphabet-Recognition-WebApp" /><meta name="author" content="Abduttayyeb-Mazhar-Rampurawala" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <title> 
+        Letter-Recognition 
+    </title> 
+      <link rel="shortcut icon" href="{{ url_for('static',filename='favicon.png') }}">
+
+</head> 
+  
+<body style="background-color: #212529"> 
+    <nav class="navbar navbar-dark bg-dark mt-4">
+        
+		<center><div><span style="margin-left:330px;color:red"><font size="12">Sign Language Recognition</font></div></center>
+    </nav>
+
+    <div class="container mt-4">
+                <center>
+                    <h2>Sign language Prediction: {{output}}</h2>
+                    <br><br>
+                    <h2>Upload a Sign language : </h2>
+                </center>
+                <form action="/predict" method="POST" enctype="multipart/form-data">
+                     <input type="file" name="img" id="img"  required>
+                     <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+                
+                <center>
+                  <div id="imagePreview" class="mt-3" style="width: 250px; height: 850px"></div> <!-- Image preview will be displayed here -->
+                </center>
+                <div class="row">
+            <div class="col d-flex justify-content-center m-3">
+                <div class="d-flex justify-content-center align-items-center">
+                    <h2 style="color: white">{{ value }}</h2>
+                </div>
+            </div>
+            
+        </div>
+        <footer class="mt-auto text-white-50 justify-content-center d-flex">
+                
+        </footer>
+    </div>
+
+    <!-- JavaScript code for image preview -->
+  <script>
+    const fileInput = document.getElementById('img');
+    const imagePreview = document.getElementById('imagePreview');
+
+    fileInput.addEventListener('change', function () {
+      const file = this.files[0];
+      if (file) {
+        const reader = new FileReader();
+
+        reader.addEventListener('load', function () {
+          const image = new Image();
+          image.src = this.result;
+          image.classList.add('img-fluid');
+          imagePreview.innerHTML = ''; // Clear previous preview
+          imagePreview.appendChild(image);
+        });
+
+        reader.readAsDataURL(file);
+      } else {
+        imagePreview.innerHTML = 'No image selected';
+      }
+    });
+  </script>
+    
+</body> 
+  
+</html> 
+
+           
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+        </div>
+
+       
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+     
+
+    <!-- ======= F.A.Q Section ======= -->
+    
+
+    <!-- ======= Contact Section ======= -->
+    
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+               
+             
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+             
+          </div>
+
+          <d 
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/maxim-free-onepage-bootstrap-theme/ -->
+       
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../static/vendor/aos/aos.js"></script>
+  <script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../static/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../static/vendor/php-email-form/validate.js"></script>
+  <script src="../static/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../static/js/main.js"></script>
+
+</body>
+
+</html>
